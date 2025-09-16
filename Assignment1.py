@@ -33,8 +33,17 @@ def star_shape(rows):
 # Function 5: While Loop – Counting Multiples of 3
 # This function should return a list of numbers from 1 to limit, replacing multiples of 3 with "Multiple of 3".
 def count_multiples_of_3(limit):
-    return
-    
+    number = ""
+    i = 1
+    while i <= limit:
+        if i % 3 == 0:
+            number += "Multiple of 3"
+        else:
+            number += str(i)
+        i += 1
+        number = str(number) + "\n"
+    return number.rstrip()
+print (count_multiples_of_3(20))
 
 # Function 6: Sum of Even Numbers in a Range
 # This function should calculate and return the sum of even numbers within a given range.
